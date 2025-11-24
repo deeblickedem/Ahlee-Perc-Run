@@ -18,4 +18,33 @@
   <!-- Styles -->
   <link rel="stylesheet" href="gamelab.css">
   <style>
-    body
+    body {
+      margin: 0;
+      overflow: hidden;
+      user-select: none;
+    }
+    #soft-buttons {
+      display: none;
+    }
+    #studio-dpad-container {
+      position: absolute;
+      width: 100%;
+      bottom: 5px;
+      height: 157px;
+      overflow-y: hidden;
+    }
+  </style>
+</head>
+
+<body style="margin:0; overflow:hidden; user-select:none;">
+  <!-- Optional control buttons -->
+  <div id="soft-buttons">
+    <button id="leftButton" disabled class="arrow"></button>
+    <button id="rightButton" disabled class="arrow"></button>
+    <button id="upButton" disabled class="arrow"></button>
+    <button id="downButton" disabled class="arrow"></button>
+  </div>
+
+  <div id="studio-dpad-container"></div>
+</body>
+</html>
